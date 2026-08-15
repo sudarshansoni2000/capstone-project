@@ -1,0 +1,4 @@
+[core]
+    remote = mydvc
+['remote "mydvc"']
+    url = s3://capestone-demo
