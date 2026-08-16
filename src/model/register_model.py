@@ -52,6 +52,13 @@ def register_model(model_name: str, model_info: dict):
             model_uri=model_uri,
             name=model_name
         )
+        client = mlflow.MlflowClient()
+
+        client.set_registered_model_alias(
+            name=model_name,
+            alias="candidate",
+            version=model_version.version
+        )
 
         logging.info(
             "Model %s version %s registered successfully",
