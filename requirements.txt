@@ -94,7 +94,7 @@ Markdown==3.6
 MarkupSafe==2.1.5
 marshmallow==3.21.3
 matplotlib==3.9.1
-mlflow
+# mlflow
 mlflow-skinny
 multidict==6.0.5
 mypy-extensions==1.0.0
@@ -175,5 +175,6 @@ zc.lockfile==3.0.post1
 zipp==3.19.2
 prometheus_client
 dotenv
-
+mlflow==3.15.1
+mlflow-skinny==3.15.1
 -e .
