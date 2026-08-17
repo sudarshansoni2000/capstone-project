@@ -37,8 +37,7 @@ mlflow.set_tracking_uri(f'{dagshub_url}/{repo_owner}/{repo_name}.mlflow')
 # -------------------------------------------------------------------------------------
 
 # mlflow.set_tracking_uri(
-#     "https://dagshub.com/sudarshansoni2000/capstone-project.mlflow"
-# )
+#     "https://dagshub.com/sudarshansoni2000/capstone-project.mlflow")
 # dagshub.init(repo_owner='sudarshansoni2000', repo_name='capstone-project', mlflow=True)
 
 mlflow.set_experiment("Logistic Regression Baseline")

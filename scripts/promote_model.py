@@ -2,6 +2,7 @@
 
 import os
 import mlflow
+import dagshub
 
 
 def promote_model():
@@ -27,9 +28,14 @@ def promote_model():
     # 2. Set MLflow tracking URI
     # ---------------------------------------------------------
 
-    mlflow.set_tracking_uri(
-        f"{dagshub_url}/{repo_owner}/{repo_name}.mlflow"
-    )
+    # mlflow.set_tracking_uri(
+    #     "https://dagshub.com/sudarshansoni2000/capstone-project.mlflow"
+    # )
+    # dagshub.init(repo_owner='sudarshansoni2000', repo_name='capstone-project', mlflow=True)
+
+    # mlflow.set_tracking_uri(
+    #     f"{dagshub_url}/{repo_owner}/{repo_name}.mlflow"
+    # )
 
     # ---------------------------------------------------------
     # 3. Create MLflow client

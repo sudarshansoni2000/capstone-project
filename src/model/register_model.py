@@ -25,6 +25,10 @@ repo_name = "capstone-project"
 # Set up MLflow tracking URI
 mlflow.set_tracking_uri(f'{dagshub_url}/{repo_owner}/{repo_name}.mlflow')
 # -------------------------------------------------------------------------------------
+# Local 
+# mlflow.set_tracking_uri("https://dagshub.com/sudarshansoni2000/capstone-project.mlflow")
+# dagshub.init(repo_owner='sudarshansoni2000', repo_name='capstone-project', mlflow=True)
+
 
 def load_model_info(file_path: str) -> dict:
     """Load the model info from a JSON file."""
@@ -127,3 +131,9 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# 2f239c5772834937f5780b727a65d2e7a86498fa
+
+
+# docker run -p 8888:5000 -e CAPSTONE_TEST=2f239c5772834937f5780b727a65d2e7a86498fa capstone-app:latest
