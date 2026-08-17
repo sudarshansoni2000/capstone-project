@@ -51,3 +51,15 @@ stages:
     deps:
       - reports/experiment_info.json
       - src/model/register_model.py
+
+  # model_tests:
+  #   cmd: python -m unittest discover -s tests -p "test_model.py"
+  #   deps:
+  #     - tests/test_model.py
+  #   always_changed: true
+
+  # promote_model:
+  #   cmd: python scripts/promote_model.py
+  #   deps:
+  #     - scripts/promote_model.py
+  #   always_changed: true
