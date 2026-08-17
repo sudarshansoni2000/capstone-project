@@ -54,11 +54,11 @@ jobs:
         run: python -m unittest tests/test_flask_app.py
 
 
-      - name: Promote model to production
-        if: success()
-        env:
-          CAPSTONE_TEST: ${{ secrets.CAPSTONE_TEST }}
-        run: python scripts/promote_model.py
+      # - name: Promote model to production
+      #   if: success()
+      #   env:
+      #     CAPSTONE_TEST: ${{ secrets.CAPSTONE_TEST }}
+      #   run: python scripts/promote_model.py
 
 
       - name: Loging to AWS ECR 
